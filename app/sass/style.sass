@@ -28,6 +28,22 @@ p
     color: $grey
     font-weight: 500 
     font-family: $secondary-font
+.green-button
+    background: $green 
+    color: #fff
+    cursor: pointer
+    width: 163px
+    height: 45px
+    display: flex 
+    justify-content: center 
+    align-items: center
+    border-radius: 50px
+    font-weight: 600
+    transition: all .3s
+    margin-top: 40px
+.green-button:hover 
+    background: #72AB6E
+
 //end global style
 
 .page 
@@ -41,12 +57,14 @@ p
     top: 0 
     left: 0
     z-index: 996
-    position: relative
 .content 
     min-height: 100vh 
     width: 50vw
     padding-top: 160px
     position: relative
+    background: url('../img/bee.svg')
+    background-repeat: no-repeat 
+    background-position: top 576px right
 .slider__image
     height: 100vh
     width: 100%
@@ -136,6 +154,8 @@ p
     justify-content: space-between 
     align-items: center
     padding-bottom: 27px
+    margin-top: 194px
+.footer--full-screen
     margin-top: 50px
 .footer__link
     color: $light-grey
@@ -176,18 +196,23 @@ p
     transform: translateX(-50%)
     padding: 70px 94px 56px 94px
     width: 598px
+    
     form 
         width: 100%
-.input 
+.input,
+.textarea,
+.select
     width: 100%
     height: 45px
     border: 1px solid #E2E2E2
     background: #FFF
     outline: none
     padding: 0 14px
-.input::placeholder 
+.input::placeholder,
+.textarea::placeholder
     color: #1B1B1B
-.input:focus::placeholder 
+.input:focus::placeholder,
+.textarea:focus::placeholder 
     color: transparent
 .input-wrapper
 
@@ -205,6 +230,9 @@ p
     margin-top: 34px
     border-radius: 50px
     font-weight: 600
+    transition: all .3s
+.button:hover 
+    background: #970F30
 .forgot-password
     text-align: center
     text-decoration: none
@@ -220,7 +248,207 @@ p
     cursor: pointer 
 .header__login
     cursor: pointer 
+.quantity-wrapper
+    position: relative
+    z-index: 999
+    width: 111px
+    border: 1px solid #DBDBDB
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    height: 50px
+    border-radius: 50px
+    font-size: 18px 
+    font-weight: 600 
+    color: #000
+    margin-right: 21px
+    button 
+        outline: none 
+        border: none
+        height: 100%
+        padding: 0 17px
+        background: transparent
+        font-size: 18px
+        font-weight: 600
+        color: #000
+        
+    input 
+        width: 100%
+        text-align: center 
+        border: none 
+        height: 100%
+        margin: 0 
+        padding: 0
+        display: block
+        outline: none
+        font-size: 18px
+        font-weight: 600
+        color: #000
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+.article
+    font-size: 30px
+    font-weight: 600
+    color: $grey
+.content-button-wrapper
+    display: flex 
+    align-items: center
+    margin-bottom: 38px
 //end login modal
+
+//start proceed item
+.proceed-item
+    width: 100% 
+    padding: 24px
+    border: 1px solid #D4D4D4
+    background: #FFF
+    position: relative
+    cursor: pointer
+    margin-bottom: 28px
+    min-height: 162px
+.proceed-item__arrow
+    position: absolute 
+    top: 28px 
+    right: 26px
+    cursor: pointer
+.proceed-item:hover
+    background: #F8F8F8
+    border: 1px solid $green
+.proceed-item__content
+    display: none
+.close-item
+    display: none
+.proceed-item.active
+    background: #F8F8F8
+    border: 1px solid $green
+    .green-button 
+        display: none
+    .proceed-item__content
+        display: block
+    .close-item 
+        display: block
+    .down-arrow
+        display: none
+.code-wrapper
+    position: relative
+.code-button
+    height: 24px 
+    position: absolute 
+    top: 50% 
+    right: 0
+    transform: translateY(-50%)
+    font-size: 14px
+    display: flex 
+    justify-content: center 
+    align-items: center
+    padding: 0 17px
+    background: transparent 
+    border: none
+    outline: none
+    border-left: 1px solid #BDBDBD
+    font-size: 14px 
+    font-weight: 600 
+    color: #BDBDBD
+    pointer-events: none
+.code-button:focus 
+    outline: none
+.code-button.active
+    color: #1B1B1B
+    pointer-events: all
+.proceed-item__content-wrapper
+    padding-top: 26px
+    display: none
+.proceed-item__content-wrapper.active 
+    display: block
+.error-title
+    font-size: 17px 
+    font-weight: 600
+    margin-bottom: 2px
+.code-error
+    display: flex
+    align-items: flex-start
+    img 
+        margin-top: 15px
+.code-error__content
+    padding-left: 24px
+.code-wrapper--succes
+    .code-button
+        display: none
+    input 
+        background-image: url('../img/succ.svg')
+        background-repeat: no-repeat 
+        background-position: right 15px center
+.input-wrapper--multu
+    .input 
+        margin-bottom: 10px
+.input-row 
+    display: flex 
+    justify-content: space-between 
+    .input 
+        width: 48%
+.textarea 
+    height: 126px 
+    padding-top: 9px
+.checkbox-wrapper
+    display: flex 
+    align-items: center
+    margin-top: 20px
+.checkbox
+    display: none
+.checkox-label
+    width: 32px 
+    height: 32px
+    border: 1px solid #E2E2E2
+    background: #FFF
+    margin-right: 6px
+    cursor: pointer
+.checkbox:checked + .checkox-label
+    background: $green
+    background-image: url('../img/checkbox.svg')
+    background-repeat: no-repeat
+    background-position: center
+    border: none
+.form-footer
+    text-align: center
+    margin-top: 18px
+    font-weight: 600
+    padding-bottom: 20px
+    a 
+        color: #000
+    a:hover 
+        color: #000
+.input--error
+    border: 1px solid #F3818B
+    background: rgba(243, 129, 139, 0.27)
+    color: #B82347
+.input--error::placeholder 
+    color: #B82347
+.form-footer--red
+    color: #B82347
+    padding-bottom: 0
+.select
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    background-image: url('../img/triangle.svg')
+    background-repeat: no-repeat
+    background-position: right 18px center
+    cursor: pointer
+.pick-up__content
+    display: none 
+.pick-up__content.active
+    display: block
+.pick-up__content
+    padding-top: 12px
+.link 
+    color: $main-color 
+    text-decoration: underline
+.link:hover 
+    color: $main-color
+    margin-bottom: 36px
+//end proceed item
 
 @import "media"
 

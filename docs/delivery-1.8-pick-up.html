@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Title</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+		integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+	<header class="header">
+		<a href="index.html" class="logo">
+			<img src="img/logo.svg" alt="">
+		</a>
+
+		<div class="header__menu">
+			<div class="header__phone">
+				<span>
+					Order Enquiries:
+				</span>
+				<a href="tel:(023) 312 1071">
+					(023) 312 1071
+				</a>
+			</div>
+
+			<div class="header__line"></div>
+
+			<div class="header__login">
+				User Login
+				<img src="img/login.svg" alt="">
+			</div>
+		</div>
+	</header>
+
+	<div class="page">
+		<div class="slider-wrapper">
+			<img src="img/leaf.svg" alt="" class="leaf">
+			<img src="img/circle.svg" alt="" class="circle">
+			<div class="slider">
+				<div class="slider__item">
+					<img src="img/img1.png" alt="" class="slider__image">
+				</div>
+				<div class="slider__item">
+					<img src="img/img2.png" alt="" class="slider__image">
+				</div>
+				<div class="slider__item">
+					<img src="img/img3.png" alt="" class="slider__image">
+				</div>
+				<div class="slider__item">
+					<img src="img/img4.png" alt="" class="slider__image">
+				</div>
+				<div class="slider__item">
+					<img src="img/img5.png" alt="" class="slider__image">
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			
+			<img src="img/circles.svg" alt="" class="circles">
+			<div class="wrapper">
+				<div class="wrapper__content">
+					<h1 class="h1"><img src="img/img.svg" alt="" class="img-bee">
+						Fresh Cherries
+					</h1>
+					<div class="sub-title">
+						R150 / 2kg box
+					</div>
+
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut porta leo. Praesent sit amet aliquet enim, in porttitor dolor. Cras facilisis justo quis pulvinar efficitur. Vestibulum lacus odio, aliquam id lectus eget, tincidunt rutrum nunc. Ut placerat pellentesque felis quis pulvinar.
+					</p>
+
+					<div class="content-button-wrapper">
+							<div class="quantity-wrapper">
+								<button id="decrement">–</button>
+							<input type="number" value="1" id="quantity" min="0"/>
+							<button id="increment">+</button>
+							</div>
+							
+
+						  <div class="article">
+							R300
+						  </div>
+					</div>
+
+					<div class="proceed-item active">
+						<div class="proceed-item__arrow">
+							<img src="img/down.svg" alt="" class="down-arrow">
+							<img src="img/close-item.svg" alt="" class="close-item">
+						</div>
+						<h3 class="h3">
+							Cape Town Delivery
+						</h3>
+						<p>
+							Delivery will be within 4 and 8 days
+						</p>
+
+						<div class="green-button">
+							PROCEED
+						</div>
+
+						<div class="proceed-item__content active">
+							<div class="input-wrapper">
+								<label for="" class="label">
+									What is your postal code?
+								</label>
+
+								<div class="code-wrapper code-wrapper--succes">
+									<input type="text" placeholder="" value="1234" class="input" id="code-input">
+									<button class="code-button active" id="codeBtn">CHECK CODE</button>
+								</div>
+
+								<div class="proceed-item__content-wrapper active">
+
+									<div class="input-wrapper input-wrapper--multu">
+										<label for="" class="label">Your Details</label>
+										<div class="input-row">
+											<input type="text" class="input" placeholder="Name*">
+										<input type="text" class="input" placeholder="Surname">
+										</div>
+
+										<input type="text" class="input input--error" placeholder="Phone*">
+										<input type="text" class="input" placeholder="Email Address*">
+										
+									</div>
+
+									<div class="input-wrapper input-wrapper--multu">
+										<label for="" class="label">Delivery Address</label>
+										
+										<input type="text" class="input" placeholder="Company Optional">
+										<input type="text" class="input" placeholder="Street Address*">
+										<input type="text" class="input" placeholder="Apartment">
+										<input type="text" class="input" placeholder="Cape Town Suburb*">
+										<textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Order Notes (Optional)"></textarea>
+
+										<div class="checkbox-wrapper">
+											<input type="checkbox" id="checkbox" class="checkbox">
+											<label for="checkbox" class="checkox-label"></label>
+											<label for="checkbox" class="checkox-text-label">Create account during checkout.</label>
+										</div>
+
+										
+
+
+										
+									</div>
+
+									<div class="input-wrapper">
+										<label for="" class="label">Add Password</label>
+										
+										<input type="text" class="input" placeholder="Type a password that you can use again later">
+										</div>
+
+									<button type="submit" class="button">
+										CHECKOUT
+									</button>
+
+									<div class="form-footer form-footer--red">
+										*Fields marked in red are mandatory.		
+									</div>
+
+									<div class="form-footer">
+										Already have an account?
+										<a href="">Login.</a>
+										
+									</div>
+
+
+
+								</div>
+
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="proceed-item">
+						<div class="proceed-item__arrow">
+							<img src="img/down.svg" alt="" class="down-arrow">
+							<img src="img/close-item.svg" alt="" class="close-item">
+						</div>
+						<h3 class="h3">
+							Pickup Johannesburg or Durban
+						</h3>
+						<p>
+							Purchase now and you can pic it up at a Depot in Johannesburg or Durban.
+						</p>
+						<p>4 - 8 days processing time.</p>
+
+						<div class="green-button">
+							PROCEED
+						</div>
+
+						<div class="proceed-item__content active">
+							<div class="input-wrapper">
+								<label for="" class="label">
+									Choose your pickup point
+								</label>
+							<select name="" id="" class="select pick-up-select">
+								<option value="">Select</option>
+								<option value="">Durban - ABC Company Depot</option>
+								<option value="">Select2</option>
+							</select>
+
+								</div>
+
+								<div class="pick-up__content">
+									<a href="" class="link">View pickup point on map</a>
+
+									<div class="input-wrapper input-wrapper--multu">
+										<label for="" class="label">Your Details</label>
+										<div class="input-row">
+											<input type="text" class="input" placeholder="Name*">
+										<input type="text" class="input" placeholder="Surname">
+										</div>
+
+										<input type="text" class="input" placeholder="Phone*">
+										<input type="text" class="input" placeholder="Company Optional">
+										<input type="text" class="input" placeholder="Email Address*">
+										<textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Order Notes (Optional)"></textarea>
+										<div class="checkbox-wrapper">
+											<input type="checkbox" id="checkbox2" class="checkbox">
+											<label for="checkbox2" class="checkox-label"></label>
+											<label for="checkbox2" class="checkox-text-label">Create account during checkout.</label>
+										</div>
+
+
+
+										
+									</div>
+									<button type="submit" class="button">
+										CHECKOUT
+									</button>
+
+									<div class="form-footer">
+										Already have an account?
+										<a href="">Login.</a>
+										
+									</div>
+								</div>
+						</div>
+
+
+					</div>
+
+					<div class="proceed-item">
+						
+						<h3 class="h3">
+							Pick n Pay
+						</h3>
+						<p>
+							Alternatively, find us in all Pick n Pays :)
+						</p>
+
+					
+					</div>
+
+
+				</div>
+				<div class="footer">
+					<a href="terms-conditions.html" class="footer__link">Terms & Conditions</a>
+					<a href="refund-policy.html" class="footer__link">Refund Policy</a>
+					<a href="Cherrytime.co.za" class="footer__link">Cherrytime.co.za</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- start login modal -->
+	<div class="login-modal">
+		<div class="login-modal-content">
+			<img src="img/close.svg" alt="" class="close-modal">
+			<h3 class="h2">
+				Login
+			</h3>
+			<form action="">
+
+				<div class="input-wrapper">
+					<label for="" class="label">
+						Username/Email
+					</label>
+					<input type="text" class="input" placeholder="Gideon">
+				</div>
+
+				<div class="input-wrapper">
+					<label for="" class="label">
+						Password
+					</label>
+					<input type="password" class="input" value="00000000">
+				</div>
+
+				<input type="submit" class="button" value="LOGIN">
+
+				<a href="" class="forgot-password">Forgot Password?</a>
+
+			</form>
+		</div>
+	</div>
+	<!-- end login modal -->
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
