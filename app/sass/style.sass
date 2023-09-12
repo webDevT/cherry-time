@@ -23,6 +23,11 @@ p
     font-size: 22px 
     font-weight: 700
     color: $grey
+.h2 
+    font-size: 36px
+    color: $grey
+    font-weight: 500 
+    font-family: $secondary-font
 //end global style
 
 .page 
@@ -81,6 +86,7 @@ p
     width: 100% 
     top: 0
     left: 0
+    z-index: 999
 .header__menu
     display: flex 
     align-items: center
@@ -151,7 +157,73 @@ p
     position: absolute 
     right: 0 
     top: 197px
+
+//start login modal
+.login-modal
+    position: fixed 
+    width: 100% 
+    height: 100% 
+    top: 0 
+    left: 0
+    background: rgba(#86C582BF, .75) 
+    z-index: 999
+    display: none
+.login-modal-content
+    background: #fff
+    position: absolute 
+    top: 15% 
+    left: 50%
+    transform: translateX(-50%)
+    padding: 70px 94px 56px 94px
+    width: 598px
+    form 
+        width: 100%
+.input 
+    width: 100%
+    height: 45px
+    border: 1px solid #E2E2E2
+    background: #FFF
+    outline: none
+    padding: 0 14px
+.input::placeholder 
+    color: #1B1B1B
+.input:focus::placeholder 
+    color: transparent
+.input-wrapper
+
+    margin-top: 24px
+.label 
+    font-weight: 600
+    color: #1B1B1B
+    margin-bottom: 12px
+.button 
+    width: 100% 
+    background: $secondary-color
+    border: none 
+    color: #fff
+    height: 45px
+    margin-top: 34px
+    border-radius: 50px
+    font-weight: 600
+.forgot-password
+    text-align: center
+    text-decoration: none
+    display: block
+    color: $main-color
+    margin-top: 23px
+.forgot-password:hover 
+    color: $main-color
+.close-modal
+    position: absolute 
+    top: 20px 
+    right: 15px
+    cursor: pointer 
+.header__login
+    cursor: pointer 
+//end login modal
+
 @import "media"
+
 
 
 
