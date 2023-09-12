@@ -1,9 +1,156 @@
 @import "vars"
 @import "fonts"
 
+//start global style 
+body 
+    font-family: $main-font 
+    font-size: 16px
+    color: $main-color
+.h1 
+    color: $secondary-color
+    font-family: $secondary-font
+    font-weight: 500 
+    font-size: 44px
+    margin-bottom: 8px
+.sub-title
+    font-size: 26px
+    font-weight: 400
+    margin-bottom: 27px
+    color: $grey
+p 
+    line-height: 1.7
+.h3 
+    font-size: 22px 
+    font-weight: 700
+    color: $grey
+//end global style
 
+.page 
+    min-height: 100vh 
+    display: flex
+    justify-content: flex-end
+.slider-wrapper 
+    width: 50vw 
+    height: 100vh
+    position: fixed
+    top: 0 
+    left: 0
+    z-index: 996
+    position: relative
+.content 
+    min-height: 100vh 
+    width: 50vw
+    padding-top: 160px
+    position: relative
+.slider__image
+    height: 100vh
+    width: 100%
+    object-fit: cover
+    object-position: center
+.slick-dots
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    margin: 0 
+    padding: 0
+    z-index: 99 
+    position: absolute 
+    bottom: 25px
+    left: 50%
+    transform: translateX(-50%)
+    list-style: none
+    li 
+        margin: 0 5px
+        button 
+            font-size: 0 
+            border: none 
+            width: 10px 
+            height: 10px 
+            background: #fff 
+            border-radius: 50%
+            padding: 0 
+            outline: none
+    .slick-active 
+        button
+            background: #000
+.header 
+    display: flex 
+    justify-content: flex-end
+    align-items: center
+    position: absolute 
+    width: 100% 
+    top: 0
+    left: 0
+.header__menu
+    display: flex 
+    align-items: center
+    padding-top: 50px
+    padding-right: 40px
+    a 
+        color: $main-color 
+        text-decoration: none
+.header__line
+    width: 1px 
+    height: 28px
+    background: #ADADAD
+    margin: 0 28px
+.header__login
+    img 
+        margin-left: 15px
+//start header style
+.logo 
+    position: fixed 
+    top: 0 
+    left: 0
+    z-index: 999
+//end header style
+.leaf 
+    position: absolute 
+    bottom: 181px
+    right: -42px
+.circle 
+    right: -39px 
+    bottom: 79px
+    position: absolute
+    z-index: 99
+.wrapper
+    width: 474px 
+    max-width: 90%
+    margin-left: auto 
+    margin-right: auto
+    height: 100%
+    display: flex 
+    flex-direction: column 
+    justify-content: space-between
 
+//start footer style
+.footer 
+    width: 100% 
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    padding-bottom: 27px
+    margin-top: 50px
+.footer__link
+    color: $light-grey
+    text-decoration: none
+.footer__link:hover 
+    color: $light-grey
+    font-size: 15px
+//end footer style 
 
+.content-button-wrapper
+    margin-top: 38px
+.img-bee
+    position: absolute 
+    top: 100px
+    left: -60px
+.h1 
+    //position: relative
+.circles
+    position: absolute 
+    right: 0 
+    top: 197px
 @import "media"
 
 
