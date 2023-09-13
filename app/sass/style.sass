@@ -12,6 +12,9 @@ body
     font-weight: 500 
     font-size: 44px
     margin-bottom: 8px
+.h1--black 
+    color: $grey
+    margin-bottom: 89px
 .sub-title
     font-size: 26px
     font-weight: 400
@@ -41,9 +44,17 @@ p
     font-weight: 600
     transition: all .3s
     margin-top: 40px
+    border: none
+    outline: none
+.green-button:focus 
+    outline: none
 .green-button:hover 
     background: #72AB6E
-
+.container 
+    width: 1196px 
+    padding-left: 0 
+    padding-right: 0 
+    max-width: 90vw
 //end global style
 
 .page 
@@ -154,15 +165,16 @@ p
     justify-content: space-between 
     align-items: center
     padding-bottom: 27px
-    margin-top: 194px
+    margin-top: 168px
 .footer--full-screen
     margin-top: 50px
 .footer__link
     color: $light-grey
     text-decoration: none
+    font-size: 15px
 .footer__link:hover 
     color: $light-grey
-    font-size: 15px
+    
 //end footer style 
 
 .content-button-wrapper
@@ -231,8 +243,15 @@ p
     border-radius: 50px
     font-weight: 600
     transition: all .3s
+    display: flex
+    justify-content: center 
+    align-items: center
+    text-decoration: none
+    img 
+        margin-right: 15px
 .button:hover 
     background: #970F30
+    color: #fff
 .forgot-password
     text-align: center
     text-decoration: none
@@ -449,6 +468,198 @@ input::-webkit-inner-spin-button
     color: $main-color
     margin-bottom: 36px
 //end proceed item
+
+.footer
+    .container 
+        display: flex
+        justify-content: flex-end
+        .footer__link 
+            margin-left: 58px
+.header--static
+    position: static
+    display: flex
+    justify-content: space-between
+.logo 
+    position: static
+
+//start checkout style
+.checkout-page
+    padding-top: 60px 
+.checkout-table
+    margin-top: 24px
+    padding: 0 24px 27px 24px
+    border: 1px solid #D4D4D4
+.product-row
+    display: flex 
+    align-items: center
+    height: 100%
+.checkout-table__row
+    display: flex
+    align-items: center
+.checkout__col
+    min-height: 146px
+    display: flex 
+    align-items: center
+    font-weight: 600
+    position: relative
+.checkout__col:first-child
+    width: 38.397vw
+.checkout__col:nth-child(2)
+    width: 20vw
+.checkout__col:nth-child(3)
+    width: 20vw
+.checkout__col:nth-child(4)
+    width: 12vw
+.checkout-title
+    font-size: 18px 
+    font-weight: 600
+.checkout-title__col
+    margin-left: 47px
+.price-title
+    font-weight: 600
+.checkout__title
+    position: absolute 
+    top: -11px 
+    left: 0
+    transform: translateY(-100%)
+    font-weight: 400
+.checkout-title__col
+    position: relative
+    min-height: 146px
+    display: flex 
+    align-items: center
+.checkout-table__footer
+    background: $green
+    color: #fff  
+    padding: 10px 20px
+    font-weight: 400
+    display: flex 
+    justify-content: space-between
+    cursor: pointer
+    img 
+        margin-left: 35px
+.checkout-table__footer-wrapper
+    width: 100% 
+    display: flex 
+    justify-content: space-between
+.checkout-delivery-details
+    padding-top: 52px
+.checkout-delivery-details
+    width: 870px 
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto
+.button-wrapper.flex-end
+    display: flex
+    justify-content: flex-end
+.checkout-delivery-details
+    padding-bottom: 30px
+    display: none
+.down-white
+    transition: all .3s
+.down-white.active 
+    transform: rotate(-180deg)
+.product-row
+    img 
+        width: 90px 
+        height: 90px 
+        object-fit: cover 
+        object-position: center
+.add-gift__header
+    display: flex 
+    justify-content: space-between
+    align-items: center
+.add-gift-content
+    display: none
+.add-gift__header
+    padding-top: 30px
+    p 
+        margin-bottom: 0
+.add-gift__button
+    cursor: pointer 
+    align-items: center
+    display: flex
+    font-size: 14px 
+    font-weight: 600
+    svg
+        margin-left: 15px
+.cancel-gift
+    font-size: 14px
+    font-weight: 600
+.button-wrapper
+    align-items: center
+    margin-top: 19px
+    .green-button
+        margin-top: 0
+        margin-left: 20px
+.checkout-footer
+    display: flex 
+    justify-content: space-between
+    margin-top: 16px
+    .checkbox-wrapper 
+        margin-bottom: 20px
+        margin-top: 0
+.checkout-footer__col--right
+    text-align: right
+    font-size: 18px
+.light-grey
+    color: $light-grey
+.semi-bold
+    font-weight: 600
+.checkout-button
+    width: 335px 
+    height: 45px 
+    font-size: 16px 
+    text-decoration: none
+    display: flex 
+    justify-content: center 
+    align-items: center
+.checkout-button:hover 
+    color: #fff
+.add-gift__button 
+    svg 
+        fill:#444444
+.checkout-table
+    .checkout__title
+        display: none
+.checkout-table:first-child 
+    .checkout__title
+        display: block
+.payment-getway
+    display: flex 
+    flex-direction: column 
+    justify-content: center 
+    align-items: center
+    min-height: calc(100vh - 150px)
+    .h1 
+        margin-bottom: 50px
+//end checkout style 
+.footer--static 
+    margin-top: 40px
+
+.spiner
+    animation: spin 3s linear infinite
+@keyframes spin
+    100%
+        transform: rotate(360deg)
+.full-screen-page
+    background: url('../img/thank-you-bg.svg')
+    background-size: 90vw
+    background-position: right 10vw top 3vw
+    min-height: calc(100vh - 102px)
+    background-repeat: no-repeat
+    display: flex 
+    justify-content: center 
+    align-items: center
+    .h1 
+        margin-bottom: 47px
+.full-screen-page
+    text-align: center
+.title-18
+    margin-bottom: 26px
+    font-size: 18px
+    font-weight: 600
+    color: $secondary-color
 
 @import "media"
 

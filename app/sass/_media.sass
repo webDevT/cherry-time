@@ -78,6 +78,12 @@
 		position: relative
 	.content
 		background-position: top right
+	.checkout-title__col
+		margin-left: 12px
+	.checkout__col:nth-child(2)
+		width: 14vw
+	.full-screen-page
+		background-position: right -6vw top
 
 	
 	
@@ -123,6 +129,106 @@
 		padding: 15px 18px 20px 18px
 	.content
 		background-size: 70px
+	.container 
+		max-width: 77.778vw
+	.checkout-table__row
+		flex-direction: column 
+		align-items: flex-start
+	.checkout__title
+		position: static
+		transform: translateY(0)
+		font-weight: 600
+	.product-row
+		.checkout__title
+			display: none
+	.checkout__col 
+		width: 100%
+	.checkout-table
+		padding-left: 0px 
+		padding-right: 0px
+		padding-bottom: 0
+		padding-top: 23px
+	.checkout-title__col
+		min-height: auto
+	.checkout__col:first-child,
+	.checkout__col:nth-child(2),
+	.checkout__col:nth-child(3),
+	.checkout__col:nth-child(4)
+		width: 100%
+	.checkout__col:first-child
+		margin-bottom: 28px
+	.checkout__col
+		min-height: auto
+		padding-left: 18px 
+		padding-right: 18px
+		margin-bottom: 15px
+	.checkout__col
+		display: flex 
+		justify-content: space-between 
+		align-items: center
+		.quantity-wrapper 
+			margin-right: 0
+	.price-title
+		font-weight: 400
+	.checkout__col
+		font-weight: 400
+	.checkout__col:nth-child(4)
+		margin-bottom: 25px
+	.checkout-table__footer-wrapper
+		flex-direction: column
+	.checkout-table 
+		margin-top: 19px
+	.checkout-delivery-details 
+		padding-top: 30px
+		padding-left: 17px 
+		padding-right: 17px
+	.add-gift__item
+		.checkout-table
+			padding-top: 0
+	.add-gift__header
+		flex-direction: column
+		align-items: flex-start
+	.add-gift__button
+		width: 100% 
+		background: $green
+		color: #fff 
+		justify-content: center 
+		align-items: center
+		padding-top: 20px 
+		padding-bottom: 20px
+		margin-top: 15px
+		
+		svg 
+			fill: #fff
+	.add-gift__header-content 
+		padding-left: 20px 
+		padding-right: 20px
+	.checkout-footer
+		flex-direction: column
+	.checkout-button
+		width: 100%
+	.checkout-footer__col--right
+		padding-top: 30px 
+		margin-top: 20px 
+		border-top: 1px solid #D4D4D4
+	.checkout-table
+		.checkout__title
+			display: block
+	.checkout-table .checkout-title__col .checkout__title
+		display: none
+	.full-screen-page
+		background: url('../img/thank-you-bg-mob.svg')
+		background-repeat: no-repeat
+		background-size: 90vw
+		background-position: top right 11vw
+		align-items: flex-start
+		padding-top: 28vw
+
+
+	
+
+
+
 
 		
 
@@ -173,9 +279,18 @@
 	.proceed-item
 		img 
 			width: 14px
+	.footer--static
+		.container 
+			flex-direction: column
+			text-align: center
+			.footer__link 
+				margin-left: 0
+	.checkout-page
+		padding-top: 30px
 
-
-
+@media only screen and (max-width : 380px)
+	.checkout-title
+		font-size: 17px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 365px)
 	/**/

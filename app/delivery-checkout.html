@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header header--static">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="" />
+      </a>
+
+      <div class="header__menu">
+        <div class="header__phone">
+          <span> Order Enquiries: </span>
+          <a href="tel:(023) 312 1071"> (023) 312 1071 </a>
+        </div>
+
+        <div class="header__line"></div>
+
+        <div class="header__login">
+          User Login
+          <img src="img/login.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- start checkout page -->
+    <div class="checkout-page">
+      <div class="container">
+        <h1 class="h1 h1--black">Checkout</h1>
+
+        <div class="checkout-table">
+          <div class="checkout-table__row">
+            <div class="checkout__col">
+              <div class="product-row">
+                <img src="img/product-prev.png" alt="" />
+                <div class="checkout-title__col">
+                  <div class="checkout__title">Product</div>
+                  <div class="checkout-title">Fresh Cherries 2kg</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="checkout__col">
+              <div class="checkout__title">Price</div>
+              <div class="price-title">R150.00</div>
+            </div>
+
+            <div class="checkout__col">
+              <div class="checkout__title">Quantity</div>
+              <div class="quantity-wrapper">
+                <button class="decrement">–</button>
+                <input type="number" value="1" class="quantity" min="0" />
+                <button class="increment">+</button>
+              </div>
+            </div>
+
+            <div class="checkout__col">
+              <div class="checkout__title">Subtotal</div>
+              R300.00
+            </div>
+          </div>
+
+          <div class="checkout-table__footer">
+            <div class="checkout-table__footer-wrapper">
+              <div class="checkout-footer__title">Delivery Durbanville</div>
+              <div class="checkout-footer__title">Shipping - R100.00</div>
+            </div>
+
+            <img src="img/down-white.svg" alt="" class="down-white"/>
+          </div>
+
+          <div class="checkout-delivery-details">
+            <div class="input-wrapper input-wrapper--multu">
+              <label for="" class="label">Cape Town Delivery</label>
+              <p>Delivery will be 4 and 8 days. Shipping cost of R100.00</p>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-wrapper input-wrapper--multu">
+                  <label for="" class="label">
+                    What is your postal code?
+                  </label>
+
+                  <div class="code-wrapper code-wrapper--succes">
+                    <input
+                      type="text"
+                      placeholder=""
+                      value="1234"
+                      class="input"
+                      id="code-input"
+                    />
+                    <button class="code-button active" id="codeBtn">
+                      CHECK CODE
+                    </button>
+                  </div>
+
+                  <div class="input-wrapper input-wrapper--multu">
+                    <label for="" class="label">Your Details</label>
+                    <div class="input-row">
+                      <input type="text" class="input" placeholder="Name*" />
+                      <input type="text" class="input" placeholder="Surname" />
+                    </div>
+
+                    <input type="text" class="input" placeholder="Phone*" />
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Email Address*"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="">
+                  <div class="input-wrapper input-wrapper--multu">
+                    <label for="" class="label">Delivery Address</label>
+
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Company Optional"
+                    />
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Street Address*"
+                    />
+                    <input type="text" class="input" placeholder="Apartment" />
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Cape Town Suburb*"
+                    />
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                      class="textarea"
+                      placeholder="Order Notes (Optional)"
+                    ></textarea>
+                  </div>
+
+                  <div class="button-wrapper flex-end">
+                    <button type="submit" class="green-button">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+		<!-- start add gift -->
+
+		<div class="add-gift__item">
+
+			
+
+
+			<div class="checkout-table">
+
+
+				<div class="add-gift__header">
+					<div class="add-gift__header-content">
+					<label for="" class="label">Buy extra cherries to send as a gift</label>
+					<p>We only deliver in Cape Town and surrounding suburbs</p>
+				  </div>
+
+				  <div class="add-gift__button">
+					ADD GIFT
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="6.33691" y="-7.62939e-05" width="1.81065" height="14.4852"/>
+						<rect y="8.14793" width="1.81065" height="14.4852" transform="rotate(-90 0 8.14793)"/>
+						</svg>
+				  </div>
+				</div>
+				
+
+				<div class="add-gift-content">
+				<div class="checkout-table__row">
+				  <div class="checkout__col">
+					<div class="product-row">
+					  <img src="img/product-prev.png" alt="" />
+					  <div class="checkout-title__col">
+					
+						<div class="checkout-title">Fresh Cherries 2kg</div>
+					  </div>
+					</div>
+				  </div>
+	  
+				  <div class="checkout__col">
+					
+					<div class="price-title">R150.00</div>
+				  </div>
+	  
+				  <div class="checkout__col">
+				
+					<div class="quantity-wrapper">
+					  <button class="decrement">–</button>
+					  <input type="number" value="1" class="quantity" min="0" />
+					  <button class="increment">+</button>
+					</div>
+				  </div>
+	  
+				  <div class="checkout__col">
+					
+					R450.00
+				  </div>
+				</div>
+	  
+				<div class="checkout-table__footer">
+				  <div class="checkout-table__footer-wrapper">
+					<div class="checkout-footer__title">Delivery Durbanville</div>
+					<div class="checkout-footer__title">Shipping - R100.00</div>
+				  </div>
+	  
+				  <img src="img/down-white.svg" alt="" class="down-white"/>
+				</div>
+	  
+				<div class="checkout-delivery-details">
+				  <div class="input-wrapper input-wrapper--multu">
+					<label for="" class="label">Cape Town Delivery</label>
+					<p>Delivery will be 4 and 8 days. Shipping cost of R100.00</p>
+				  </div>
+				  <div class="row">
+					<div class="col-md-6">
+					  <div class="input-wrapper input-wrapper--multu">
+						<label for="" class="label">
+						  What is your postal code?
+						</label>
+	  
+						<div class="code-wrapper code-wrapper--succes">
+						  <input
+							type="text"
+							placeholder=""
+							value="1234"
+							class="input"
+							id="code-input"
+						  />
+						  <button class="code-button active" id="codeBtn">
+							CHECK CODE
+						  </button>
+						</div>
+	  
+						<div class="input-wrapper input-wrapper--multu">
+						  <label for="" class="label">Your Details</label>
+						  <div class="input-row">
+							<input type="text" class="input" placeholder="Name*" />
+							<input type="text" class="input" placeholder="Surname" />
+						  </div>
+	  
+						  <input type="text" class="input" placeholder="Phone*" />
+						  <input
+							type="text"
+							class="input"
+							placeholder="Email Address*"
+						  />
+						</div>
+					  </div>
+					</div>
+	  
+					<div class="col-md-6">
+					  <div class="">
+						<div class="input-wrapper input-wrapper--multu">
+						  <label for="" class="label">Delivery Address</label>
+	  
+						  <input
+							type="text"
+							class="input"
+							placeholder="Company Optional"
+						  />
+						  <input
+							type="text"
+							class="input"
+							placeholder="Street Address*"
+						  />
+						  <input type="text" class="input" placeholder="Apartment" />
+						  <input
+							type="text"
+							class="input"
+							placeholder="Cape Town Suburb*"
+						  />
+						  <textarea
+							name=""
+							id=""
+							cols="30"
+							rows="10"
+							class="textarea"
+							placeholder="Order Notes (Optional)"
+						  ></textarea>
+						</div>
+	  
+						<div class="button-wrapper flex-end">
+							<div class="cancel-gift">
+								CANCEL GIFT
+							</div>
+						  <button type="submit" class="green-button">ADD</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			  </div>
+		</div>
+
+		<!-- end add gift -->
+
+		<!-- start checkout footer -->
+		<div class="checkout-footer">
+
+			<div class="checkout-footer__col">
+
+				<div class="checkbox-wrapper">
+					<input type="checkbox" id="checkbox" class="checkbox" checked>
+					<label for="checkbox" class="checkox-label"></label>
+					<label for="checkbox" class="checkox-text-label">I agree to the <a href="" class="link">Terms and Conditions</a></label>
+				</div>
+
+				<div class="checkbox-wrapper">
+					<input type="checkbox" id="checkbox" class="checkbox" checked>
+					<label for="checkbox" class="checkox-label"></label>
+					<label for="checkbox" class="checkox-text-label">I want to receive marketing material</label>
+				</div>
+			</div>
+
+			<div class="checkout-footer__col checkout-footer__col--right">
+
+				<div class="checkout-footer__item light-grey">
+					Shipping - R100.00
+				</div>
+
+				<div class="checkout-footer__item semi-bold">
+					Basket Total
+
+				</div>
+
+				<div class="checkout-footer__item semi-bold">
+                   R400.00
+				</div>
+
+				<div class="checkout-footer__item light-grey">
+					(Includes R30.00 VAT)
+				</div>
+
+				<a href="" class="button checkout-button">
+					PROCEED TO PAYMENT
+				</a>
+
+			</div>
+
+		</div>
+
+		<!-- end checkout footer -->
+
+
+
+      </div>
+    </div>
+    <!-- end checkout page -->
+
+    <div class="footer footer--static">
+      <div class="container">
+        <a href="terms-conditions.html" class="footer__link"
+          >Terms & Conditions</a
+        >
+        <a href="refund-policy.html" class="footer__link">Refund Policy</a>
+        <a href="Cherrytime.co.za" class="footer__link">Cherrytime.co.za</a>
+      </div>
+    </div>
+
+    <!-- start login modal -->
+    <div class="login-modal">
+      <div class="login-modal-content">
+        <img src="img/close.svg" alt="" class="close-modal" />
+        <h3 class="h2">Login</h3>
+        <form action="">
+          <div class="input-wrapper">
+            <label for="" class="label"> Username/Email </label>
+            <input type="text" class="input" placeholder="Gideon" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="" class="label"> Password </label>
+            <input type="password" class="input" value="00000000" />
+          </div>
+
+          <input type="submit" class="button" value="LOGIN" />
+
+          <a href="" class="forgot-password">Forgot Password?</a>
+        </form>
+      </div>
+    </div>
+    <!-- end login modal -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -42,15 +42,27 @@ $(function(){
        $('.pick-up__content').addClass('active');
       });
 
+    $('.checkout-table__footer').click(function(){
+        $(this).parent().find('.checkout-delivery-details').slideToggle();
+        $(this).parent().find('.down-white').toggleClass('active');
+    })
+
+    $('.add-gift__button').click(function(){
+        $('.add-gift-content').slideToggle();
+        $(this).css('opacity', '0');
+    })
+
+      
+
     
 
       
 
 });
 
-const incrementButton = document.querySelector("#increment");
-const decrementButton = document.querySelector("#decrement");
-const quantityInput = document.querySelector("#quantity");
+const incrementButton = document.querySelector(".increment");
+const decrementButton = document.querySelector(".decrement");
+const quantityInput = document.querySelector(".quantity");
 
 incrementButton.addEventListener("click", () => {
     if(quantityInput.value <= 14) {
