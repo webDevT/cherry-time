@@ -52,6 +52,15 @@ $(function(){
         $(this).css('opacity', '0');
     })
 
+    $(".tab").click(function() {
+        $(".tab").removeClass("active").eq($(this).index()).addClass("active");
+         $(".tab__item").hide().eq($(this).index()).fadeIn(1000)
+    }).eq(0).addClass("active");
+
+    $('.tabs').click(function(){
+        $(this).toggleClass('active');
+    })
+
       
 
     

@@ -645,7 +645,7 @@ input::-webkit-inner-spin-button
 .full-screen-page
     background: url('../img/thank-you-bg.svg')
     background-size: 90vw
-    background-position: right 10vw top 3vw
+    background-position: right 10vw top 0vw
     min-height: calc(100vh - 102px)
     background-repeat: no-repeat
     display: flex 
@@ -660,6 +660,108 @@ input::-webkit-inner-spin-button
     font-size: 18px
     font-weight: 600
     color: $secondary-color
+.full-screen-page
+    .h2 
+        margin-bottom: 37px
+.back-link
+    color: $main-color
+    text-decoration: none
+.back-link:hover
+    color: $main-color
+.login-form
+    .input-wrapper 
+        text-align: left
+
+//start account style
+.account-page
+    padding-top: 60px
+    .h2 
+        margin-bottom: 76px
+.tab 
+    font-size: 18px 
+    cursor: pointer
+    margin-bottom: 13px
+    display: block
+    text-decoration: none 
+    color: $main-color
+.tab:hover 
+    color: $main-color
+.tab.active 
+    font-weight: 700
+.tab__item
+    display: none
+.tab__item:first-child 
+    display: block
+.account-row
+    display: flex
+.tabs
+    min-width: 268px
+.tab__item
+    p 
+        width: 721px 
+        max-width: 100%
+.orders-row
+    display: flex 
+    width: 100%
+    border-bottom: 1px solid #DCDCDC
+    padding: 17px 22px
+    padding-right: 0
+    font-size: 14px
+    text-decoration: none 
+    color: $main-color
+.orders-row:hover
+    color: $main-color
+.orders-row:hover 
+    background: #F7F7F7
+    .order-arrow
+        opacity: 1
+.orders-row--header:hover 
+    background: #fff
+.orders-col
+    width: 20%
+.tab-items
+    width: 100%
+.orders-row--header
+    font-weight: 600
+.orders-col
+    display: flex 
+    align-items: center
+.order-arrow
+    margin-left: 30px
+    opacity: 0
+.mobil-title
+    display: none
+.view-order
+    display: none
+.account-page--order
+    
+    .tab__item 
+        display: none 
+    .tab__item:nth-child(2)
+        display: block
+.title-18--black
+    color: $main-color
+.order-detail-table
+    font-size: 14px
+    margin-bottom: 40px
+.order-detail-row
+    display: flex
+    border-bottom: 1px solid #DCDCDC
+    padding-top: 18px 
+    padding-bottom: 18px
+.order-detail__col:first-child 
+    width: 70%
+.order-detail__col:nth-child(2) 
+    width: 30%
+.title-16 
+    font-size: 16px
+.order-detail-row:last-child 
+    border-bottom: none
+.account-page
+    padding-bottom: 30px
+.back-order
+    display: none
+//end account style 
 
 @import "media"
 

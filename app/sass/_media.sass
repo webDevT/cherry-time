@@ -84,6 +84,10 @@
 		width: 14vw
 	.full-screen-page
 		background-position: right -6vw top
+	.tabs
+		min-width: 175px
+	.tab-items
+		width: calc(100% - 175px)
 
 	
 	
@@ -130,7 +134,7 @@
 	.content
 		background-size: 70px
 	.container 
-		max-width: 77.778vw
+		max-width: 85vw
 	.checkout-table__row
 		flex-direction: column 
 		align-items: flex-start
@@ -223,6 +227,120 @@
 		background-position: top right 11vw
 		align-items: flex-start
 		padding-top: 28vw
+	.account-row
+		flex-direction: column
+	.tabs 
+		width: 100% 
+		max-width: 100%
+		min-width: 100%
+		display: flex
+		flex-direction: column	
+		min-height: 47px
+		height: 47px
+		z-index: 99
+		border-top: 1px solid #E2E2E2
+		border-bottom: 1px solid #E2E2E2
+		position: relative
+		margin-bottom: 37px
+	.tabs:after
+		content: url('../img/triangle.svg')
+		position: absolute 
+		top: 11px
+		right: 17px
+		z-index: 99
+		
+	.tab 
+		margin-bottom: 0
+		padding: 9px 15px
+		display: none
+		background: #fff
+		border-left: 1px solid #E2E2E2
+		border-right: 1px solid #E2E2E2
+	.tab:last-child 
+		border-bottom: 1px solid #E2E2E2
+	
+	.tab.active 
+		display: block
+		font-weight: 400
+	.tabs.active 
+		.tab 
+			display: block
+	.tab-items
+		width: 100%
+	.account-page .h2
+		margin-bottom: 25px
+	.mobil-title
+		display: block
+	.orders-row--header
+		display: none
+	.orders-row
+		flex-direction: column
+		border: 1px solid #DCDCDC
+		margin-bottom: 28px
+	.orders-col
+		width: 100% 
+		justify-content: space-between
+		padding-left: 20px 
+		padding-right: 20px
+		padding-top: 8px 
+		padding-bottom: 8px
+	.orders-row
+		padding-left: 0
+	.mobil-title
+		font-weight: 600
+	.orders-row
+		font-size: 15px
+	.orders-row:hover 
+		background: #fff
+	.order-arrow
+		display: none
+	.view-order
+		display: flex 
+		justify-content: center 
+		align-items: center
+		background: #F8F8F8 
+		padding-top: 8px 
+		padding-bottom: 8px
+		margin-top: 22px
+		font-size: 14px 
+		font-weight: 600
+	.orders-row
+		padding-bottom: 0
+	.order-detail__col:first-child
+		width: auto
+	.order-detail__col:nth-child(2)
+		width: auto
+	.order-detail-row
+		display: flex 
+		justify-content: space-between
+	.order-detail__col:first-child 
+		font-weight: 600
+	.order-detail-row:first-child 
+		display: none
+	.back-order
+		display: block
+		text-decoration: none 
+		color: $main-color
+		margin-bottom: 20px
+		img 
+			margin-right: 5px
+	.tabs--order
+		display: none
+	.back-order:hover 
+		color: $main-color
+	.deliver-title
+		font-size: 15px 
+		margin-bottom: 10px
+	.account-page
+		padding-top: 25px
+
+
+	
+
+
+
+
+
 
 
 	

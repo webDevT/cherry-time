@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header header--static">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="" />
+      </a>
+
+      <div class="header__menu">
+        <div class="header__phone">
+          <span> Order Enquiries: </span>
+          <a href="tel:(023) 312 1071"> (023) 312 1071 </a>
+        </div>
+
+        <div class="header__line"></div>
+
+        <div class="header__login">
+          User Login
+          <img src="img/login.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <div class="account-page account-page--order">
+      <div class="container">
+        <h2 class="h2">My Account</h2>
+
+        <div class="account-row">
+          <div class="tabs tabs--order">
+            <div class="tab">Dashboard</div>
+
+            <div class="tab">Orders</div>
+
+            <div class="tab">Address</div>
+
+            <div class="tab">Account Details</div>
+
+            <div class="tab">Log out</div>
+          </div>
+
+          <div class="tab-items">
+            <div class="tab__item">
+              <p>
+                Hello Gideon Nieuwoudt (not Gideon Nieuwoudt?
+                <a href="" class="link">Log out</a> )
+              </p>
+              <p>
+                From your account dashboard you can view your
+                <a href="" class="link"> recent orders</a>
+                , manage your
+                <a href="" class="link"> billing address</a>
+                , and
+                <a href="" class="link">
+                  edit your password and account details.</a
+                >
+              </p>
+            </div>
+
+            <div class="tab__item"><a href="user-account.html" class="back-order">
+                <img src="img/back1.svg" alt="">
+                Back to Orders
+              </a>
+              <div class="title-18 title-18--black">
+                Order Details
+              </div>
+
+              
+
+              <div class="order-detail-table">
+
+                <div class="order-detail-row">
+                  <div class="order-detail__col semi-bold">
+                    Product
+                  </div>
+                  <div class="order-detail__col semi-bold">
+                    Total
+                  </div>
+                </div>
+
+                <div class="order-detail-row">
+                  <div class="order-detail__col title-16">
+                    Fresh Cherries - 2kg x 1
+                  </div>
+                  <div class="order-detail__col ">
+                    R300
+                  </div>
+                </div>
+
+                <div class="order-detail-row">
+                  <div class="order-detail__col">
+                    Subtotal
+                  </div>
+                  <div class="order-detail__col ">
+                    R300
+                  </div>
+                </div>
+
+                <div class="order-detail-row">
+                  <div class="order-detail__col">
+                    Order Type
+                  </div>
+                  <div class="order-detail__col ">
+                    Delivery - R150
+                  </div>
+                </div>
+
+                <div class="order-detail-row">
+                  <div class="order-detail__col">
+                    Payment method
+                  </div>
+                  <div class="order-detail__col ">
+                    Credit Card - Via Pay Fast
+                  </div>
+                </div>
+
+                <div class="order-detail-row">
+                  <div class="order-detail__col semi-bold">
+                   Total
+                  </div>
+                  <div class="order-detail__col semi-bold">
+                    R300
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="title-18 title-18--black deliver-title">
+                Delivery Address
+              </div>
+              <p>
+                1 Madikwe Street <br>
+Clara Anna Fontein <br>
+Durbanville <br>
+7550
+              </p>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- start login modal -->
+    <div class="login-modal">
+      <div class="login-modal-content">
+        <img src="img/close.svg" alt="" class="close-modal" />
+        <h3 class="h2">Login</h3>
+        <form action="">
+          <div class="input-wrapper">
+            <label for="" class="label"> Username/Email </label>
+            <input type="text" class="input" placeholder="Gideon" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="" class="label"> Password </label>
+            <input type="password" class="input" value="00000000" />
+          </div>
+
+          <input type="submit" class="button" value="LOGIN" />
+
+          <a href="" class="forgot-password">Forgot Password?</a>
+        </form>
+      </div>
+    </div>
+    <!-- end login modal -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
