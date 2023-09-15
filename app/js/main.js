@@ -61,6 +61,12 @@ $(function(){
         $(this).toggleClass('active');
     })
 
+    $('.menu-btn').click(function(){
+        $(this).toggleClass('active');
+        $('.admin-menu').toggleClass('active');
+
+    })
+
       
 
     

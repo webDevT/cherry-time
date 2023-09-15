@@ -189,7 +189,10 @@ p
     position: absolute 
     right: 0 
     top: 197px
-
+.circle-xs
+    position: absolute 
+    right: 18px
+    top: 300px
 //start login modal
 .login-modal
     position: fixed 
@@ -762,6 +765,145 @@ input::-webkit-inner-spin-button
 .back-order
     display: none
 //end account style 
+
+//start admin style
+.admin-login
+    display: flex
+    height: 100vh
+.admin-ligin-img
+    height: 100%
+    width: 36% 
+    object-fit: cover 
+    object-position: center
+.admin-login__content
+    width: calc(100% - 36%)
+    display: flex 
+    align-items: center 
+    justify-content: center
+.admin-login-form
+    width: 425px 
+    max-width: 90%
+    margin-left: auto 
+    margin-right: auto
+.admin-login-title
+    font-size: 38px
+    font-family: $secondary-font
+    font-weight: 500
+.admin-login-footer
+    text-align: left
+    a.forgot-password
+        margin-left: 0
+        text-align: left
+    .button 
+        width: 238px
+.admin-header 
+    background: $green
+    color: #fff
+    padding-left: 23px 
+    padding-right: 23px
+.admin-logo
+    img 
+        width: 77px 
+.admin-header
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+.admin-menu-wrapper
+    display: flex 
+    align-items: center
+.admin-link
+    margin-left: 25px
+    color: #fff 
+    text-decoration: none
+.admin-link:hover 
+    color: #fff
+.user-wrapper
+    padding-left: 35px
+    padding-right: 35px
+    display: flex 
+    align-items: center
+    cursor: pointer
+    img:first-child
+        margin-right: 16px
+        display: block
+    img:last-child 
+        margin-left: 13px
+.menu-row
+    width: 30px 
+    height: 2px 
+    margin-bottom: 5px
+    background: #fff
+.menu-row:last-child 
+    margin-bottom: 0
+.menu-btn
+    display: none
+
+.dashboard
+    background: #F7F7F7
+    height: calc(100vh - 77px)
+    display: flex 
+    justify-content: center 
+    align-items: center
+.dashboard__row
+    text-align: center
+.dashboard__item
+    height: 257px
+    border: 1px solid #DCDCDC
+    display: flex 
+    align-items: center 
+    justify-content: center
+.dashboard__item
+    font-size: 30px
+    text-decoration: none
+    color: $main-color
+    transition: all .3s
+    position: relative
+.next-arrow
+    position: absolute 
+    bottom: 19px 
+    right: 32px
+    opacity: 0
+    transition: all .3s
+.dashboard__item:hover 
+    color: $main-color 
+    background: #fff
+    .next-arrow
+        opacity: 1
+.opacity-animation
+    animation: fadeInFromNone 10s linear infinite
+@-webkit-keyframes fadeInFromNone
+    0%
+        opacity: 0.3
+    50%
+        opacity: 0.95
+    100%
+        opacity: 0.3
+.rotate-animation
+    animation: rotate 10s linear infinite
+@-webkit-keyframes rotate
+    0%
+        transform: rotate(25deg)
+    50%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(25deg)
+.circle-rotate-animation
+    animation: circle-rotate 10s linear infinite
+@-webkit-keyframes circle-rotate
+    0%
+        transform: translateX(0) translateY(0)
+    20%
+        transform: translateX(-20px) translateY(-45px)
+    50%
+        transform: translateX(0px) translateY(-100px)
+    70%
+        transform: translateX(-20px) translateY(-45px)
+    100%
+        transform: translateX(0px) translateY(0px)
+//end admin style
+
+
+
 
 @import "media"
 

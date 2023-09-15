@@ -333,6 +333,58 @@
 		margin-bottom: 10px
 	.account-page
 		padding-top: 25px
+	
+	.admin-login
+		flex-direction: column-reverse
+	.admin-ligin-img
+		width: 100%
+		height: 100vw
+	.admin-login
+		height: auto
+	.admin-login__content
+		width: 100%
+		padding-top: 40px 
+		padding-bottom: 40px
+	.admin-login-title
+		font-size: 30px
+	.admin-menu
+		display: none
+		padding-bottom: 40px
+	.admin-menu-wrapper
+		flex-direction: row-reverse
+	.admin-menu.active 
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: absolute 
+		top: 77px 
+		left: 0
+		width: 100vw 
+		background: $green
+
+	.admin-link
+		margin-left: 0
+		margin-top: 25px
+	.admin-header
+		padding-left: 0
+	.menu-btn
+		display: block
+	.content:after
+		animation: fadeInFromNone 5s linear infinite
+	@-webkit-keyframes circle-rotate
+		0%
+			transform: translateX(0) translateY(0)
+		20%
+			transform: translateX(0px) translateY(-45px)
+		50%
+			transform: translateX(0px) translateY(-100px)
+		70%
+			transform: translateX(0px) translateY(-45px)
+		100%
+			transform: translateX(0px) translateY(0px)
+	.circle-xs
+		width: 20px 
+		right: 6px
 
 
 	
