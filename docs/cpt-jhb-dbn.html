@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+   
+   <div class="admin-header">
+   <a href="" class="admin-logo">
+    <img src="img/logo.svg" alt="">
+   </a>
+
+   <div class="admin-menu-wrapper">
+    <div class="menu-btn">
+      <div class="menu-row"></div>
+      <div class="menu-row"></div>
+      <div class="menu-row"></div>
+    </div>
+    <div class="admin-menu">
+
+      <a href="" class="admin-link">
+        All Orders 
+      </a>
+
+      <a href="" class="admin-link">
+        Stock Management 
+      </a>
+
+      <a href="" class="admin-link">
+        Customers
+      </a>
+
+
+    </div>
+
+    <div class="user-wrapper">
+      <img src="img/user.svg" alt="">
+      Gideon
+      <img src="img/down-white.svg" alt="">
+    </div>
+   </div>
+   </div>
+
+   <div class="dashboard__header">
+    <div class="container container--xl">
+
+      <div class="dashboard__header-left">
+        <div class="dasgboard__sub-title">
+          DASHBOARD
+        </div>
+        <div class="dashboard__title">
+          All Orders
+        </div>
+      </div>
+
+      <div class="dashboard__header-right">
+        <div class="dashboard__header-right-header">
+
+          <div class="date-wrapper">
+            <img src="img/calendar.svg" alt="">
+            <span>
+              From:
+            </span>
+             1 Nov 2023 - 1 Dec 2023
+          </div>
+
+          <a href="" class="export-button" download>Export CSV 
+            <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 15V13C18.6569 13 20 11.6569 20 10C20 8.34315 18.6569 7 17 7C16.9687 7.00011 16.9687 7.00011 16.9375 7.00063L16.0738 7.01818L15.9309 6.16616C15.5303 3.77626 13.4511 2 11 2C9.1924 2 7.5543 2.96643 6.66642 4.50398L6.39066 4.98151L5.83966 5.00314C3.69934 5.08715 2 6.85044 2 9C2 10.8638 3.27477 12.4299 5 12.874V14.917C2.16229 14.441 0 11.973 0 9C0 5.95877 2.26703 3.43346 5.21989 3.05027C6.50902 1.16507 8.65344 0 11 0C14.1586 0 16.875 2.10562 17.7254 5.05224C20.1431 5.40363 22 7.48496 22 10C22 12.7614 19.7614 15 17 15ZM10 14.2533V8H12V14.2533L14.2929 12.0093L15.7071 13.3933L11 18L6.29289 13.3933L7.70711 12.0093L10 14.2533Z"/>
+              </svg>
+              
+          </a>
+        </div>
+
+        <div class="selects-row selects-row--2">
+
+          
+
+          <div class="input-wrapper">
+            <label for="" class="label">
+              Filter by status
+            </label>
+
+            <select name="" id="" class="select select2">
+              <option value="">Select</option>
+              <option value="">Lorem, ipsum</option>
+              <option value="">Lorem, ipsum</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="" class="label">
+              Search Text
+            </label>
+            <input type="text" placeholder="Go" class="input input--right">
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+    <div class="container container--xl semi-bold">
+      <div class="orders-value">
+        115 Orders
+      </div>
+      
+    </div>
+   </div>
+
+   <div class="dashboard-table__wrapper">
+    <div class="dashboard-table">
+
+      <div class="dashboard-table-row dashboard-table-row--header">
+        
+        <div class="dashboard-table-col">
+          Order no.
+        </div>
+
+        <div class="dashboard-table-col">
+          Name
+        </div>
+
+        <div class="dashboard-table-col">
+          Tel
+        </div>
+
+        <div class="dashboard-table-col">
+          Date
+        </div>
+
+        <div class="dashboard-table-col">
+          Region
+        </div>
+
+        <div class="dashboard-table-col">
+          Postal Code
+        </div>
+
+        <div class="dashboard-table-col">
+          Qty
+        </div>
+
+        <div class="dashboard-table-col">
+          Status
+        </div>
+
+        <div class="dashboard-table-col">
+          Action
+        </div>
+
+      </div>
+
+      <div class="dashboard-table-row ">
+        
+        <div class="dashboard-table-col">
+          #1
+        </div>
+
+        <div class="dashboard-table-col">
+          Joe Soap
+        </div>
+
+        <div class="dashboard-table-col">
+          082 924 9898
+        </div>
+
+        <div class="dashboard-table-col">
+          1/09/2023
+        </div>
+
+        <div class="dashboard-table-col">
+          CPT
+        </div>
+
+        <div class="dashboard-table-col">
+          7545
+        </div>
+
+        <div class="dashboard-table-col">
+          2
+        </div>
+
+        <div class="dashboard-table-col">
+          New
+        </div>
+
+        <div class="dashboard-table-col">
+          <a href="" class="table-button">
+            Pack house
+          </a>
+        </div>
+
+      </div>
+
+      <div class="dashboard-table-row ">
+        
+        <div class="dashboard-table-col">
+          #2
+        </div>
+
+        <div class="dashboard-table-col">
+          Jack Brooks
+        </div>
+
+        <div class="dashboard-table-col">
+          082 924 9898
+        </div>
+
+        <div class="dashboard-table-col">
+          1/09/2023
+        </div>
+
+        <div class="dashboard-table-col">
+          CPT
+        </div>
+
+        <div class="dashboard-table-col">
+          7545
+        </div>
+
+        <div class="dashboard-table-col">
+          2
+        </div>
+
+        <div class="dashboard-table-col">
+          Pack house
+        </div>
+
+        <div class="dashboard-table-col">
+          <a href="" class="table-button table-button--purple">
+            Send to depo
+          </a>
+        </div>
+
+      </div>
+
+      <div class="dashboard-table-row ">
+        
+        <div class="dashboard-table-col">
+          #3
+        </div>
+
+        <div class="dashboard-table-col">
+          Jane Cook
+        </div>
+
+        <div class="dashboard-table-col">
+          082 924 9898
+        </div>
+
+        <div class="dashboard-table-col">
+          1/09/2023
+        </div>
+
+        <div class="dashboard-table-col">
+          CPT
+        </div>
+
+        <div class="dashboard-table-col">
+          7545
+        </div>
+
+        <div class="dashboard-table-col">
+          2
+        </div>
+
+        <div class="dashboard-table-col">
+          Send to depo
+        </div>
+
+        <div class="dashboard-table-col">
+          <a href="" class="table-button table-button--yellow">
+            Depo received
+          </a>
+        </div>
+
+      </div>
+
+      <div class="dashboard-table-row ">
+        
+        <div class="dashboard-table-col">
+          #4
+        </div>
+
+        <div class="dashboard-table-col">
+          Jane Cook
+        </div>
+
+        <div class="dashboard-table-col">
+          082 924 9898
+        </div>
+
+        <div class="dashboard-table-col">
+          1/09/2023
+        </div>
+
+        <div class="dashboard-table-col">
+          CPT
+        </div>
+
+        <div class="dashboard-table-col">
+          7545
+        </div>
+
+        <div class="dashboard-table-col">
+          2
+        </div>
+
+        <div class="dashboard-table-col">
+          Depo received
+        </div>
+
+        <div class="dashboard-table-col">
+          <a href="" class="table-button table-button--green">
+            Complete
+          </a>
+        </div>
+
+      </div>
+
+      <div class="dashboard-table-row ">
+        
+        <div class="dashboard-table-col">
+          #1
+        </div>
+
+        <div class="dashboard-table-col">
+          Joe Soap
+        </div>
+
+        <div class="dashboard-table-col">
+          082 924 9898
+        </div>
+
+        <div class="dashboard-table-col">
+          1/09/2023
+        </div>
+
+        <div class="dashboard-table-col">
+          CPT
+        </div>
+
+        <div class="dashboard-table-col">
+          7545
+        </div>
+
+        <div class="dashboard-table-col">
+          2
+        </div>
+
+        <div class="dashboard-table-col">
+          New
+        </div>
+
+        <div class="dashboard-table-col">
+          <a href="" class="table-button">
+            Pack house
+          </a>
+        </div>
+
+      </div>
+
+      <div class="dashboard-table-row ">
+        
+        <div class="dashboard-table-col">
+          #2
+        </div>
+
+        <div class="dashboard-table-col">
+          Jack Brooks
+        </div>
+
+        <div class="dashboard-table-col">
+          082 924 9898
+        </div>
+
+        <div class="dashboard-table-col">
+          1/09/2023
+        </div>
+
+        <div class="dashboard-table-col">
+          CPT
+        </div>
+
+        <div class="dashboard-table-col">
+          7545
+        </div>
+
+        <div class="dashboard-table-col">
+          2
+        </div>
+
+        <div class="dashboard-table-col">
+          Pack house
+        </div>
+
+        <div class="dashboard-table-col">
+          <a href="" class="table-button table-button--purple">
+            Send to depo
+          </a>
+        </div>
+
+      </div>
+
+      <div class="dashboard-table-row ">
+        
+        <div class="dashboard-table-col">
+          #3
+        </div>
+
+        <div class="dashboard-table-col">
+          Jane Cook
+        </div>
+
+        <div class="dashboard-table-col">
+          082 924 9898
+        </div>
+
+        <div class="dashboard-table-col">
+          1/09/2023
+        </div>
+
+        <div class="dashboard-table-col">
+          CPT
+        </div>
+
+        <div class="dashboard-table-col">
+          7545
+        </div>
+
+        <div class="dashboard-table-col">
+          2
+        </div>
+
+        <div class="dashboard-table-col">
+          Send to depo
+        </div>
+
+        <div class="dashboard-table-col">
+          <a href="" class="table-button table-button--yellow">
+            Depo received
+          </a>
+        </div>
+
+      </div>
+
+    
+   </div>
+   </div>
+
+ 
+   
+
+
+
+
+
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

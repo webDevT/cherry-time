@@ -55,6 +55,11 @@ p
     padding-left: 0 
     padding-right: 0 
     max-width: 90vw
+.container-xl
+    width: 1320px
+    padding-left: 0 
+    padding-right: 0
+    max-width: 90vw
 //end global style
 
 .page 
@@ -411,7 +416,7 @@ input::-webkit-inner-spin-button
     .input 
         width: 48%
 .textarea 
-    height: 126px 
+    height: 155px 
     padding-top: 9px
 .checkbox-wrapper
     display: flex 
@@ -902,9 +907,296 @@ input::-webkit-inner-spin-button
         transform: translateX(0px) translateY(0px)
 //end admin style
 
+.dashboard__header
+    padding-top: 63px 
+    padding-bottom: 27px
+    background: #F7F7F7
+    .container 
+        display: flex
+.dashboard__header-left
+    width: 30%
+    border-right: 1px solid #CCCCCC
+    min-height: 100%
+.dashboard__header-right
+    width: 70%
+.dasgboard__sub-title
+    font-size: 16px 
+    font-weight: 600
+    color: $secondary-color
+.dashboard__title
+    font-size: 30px
+    text-transform: capitalize
+.dashboard__header-right
+    padding-left: 5%
+.dashboard__header-right-header
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+.date-wrapper
+    display: flex 
+    align-items: center
+    span 
+        color: $green 
+        font-weight: 600
+        margin-right: 5px
+    img 
+        margin-right: 12px
+.export-button
+    display: flex 
+    align-items: center
+    display: flex
+    justify-content: center 
+    align-items: center
+    width: 190px 
+    height: 40px
+    border-radius: 20.5px
+    border: 1px solid #E4E4E4
+    color: $green 
+    text-decoration: none
+    transition: all .3s
+    svg 
+        margin-left: 15px
+        fill: $green
+.export-button:hover 
+    background: $green
+    color: #fff
+    svg 
+        fill: #fff
 
-
-
+.selects-row
+    display: flex 
+    justify-content: space-between
+    .input-wrapper 
+        width: 32%
+.select2
+    background-image: url(../img/triangle.svg)
+    background-repeat: no-repeat
+    background-position: right 18px center  
+.input--right
+    text-align: right
+.input--right::placeholder
+    color: #B8B8B8
+.dashboard-table 
+    width: 1286px
+    margin-left: auto 
+    margin-right: auto
+    padding-top: 78px
+    margin-bottom: 79px
+.dashboard-table__wrapper
+    width: 85%
+    margin-left: auto 
+    margin-right: auto
+    overflow: auto
+.dashboard-table-row
+    display: flex
+    border-bottom: 1px solid #DCDCDC
+    padding-top: 17px 
+    padding-bottom: 17px
+    font-size: 14px
+.dashboard-table-col:first-child
+    width: 140px
+.dashboard-table-col:nth-child(2)
+    width: 175px
+.dashboard-table-col:nth-child(3)
+    width: 140px
+.dashboard-table-col:nth-child(4)
+    width: 130px
+.dashboard-table-col:nth-child(4)
+    width: 130px
+.dashboard-table-col:nth-child(5)
+    width: 150px
+.dashboard-table-col:nth-child(6)
+    width: 170px
+.dashboard-table-col:nth-child(7)
+    width: 140px
+.dashboard-table-col:nth-child(8)
+    width: 150px
+.dashboard-table-col:nth-child(9)
+    width: 150px
+.dashboard-table-row--header
+    font-weight: 600
+.table-button
+    display: flex 
+    justify-content: center 
+    align-items: center
+    width: 150px
+    height: 35px 
+    background: $secondary-color 
+    color: #fff
+    text-decoration: none
+    border-radius: 50px
+    transition: all .3s
+.table-button:hover
+    background: #970F30
+    color: #fff
+.table-button--purple
+    background: #D37EFB
+.table-button--purple:hover
+    background: #CD63FF
+.table-button--yellow
+    background: #E5A443
+.table-button--yellow:hover
+    background: #E1931E
+.table-button--green
+    background: #86C582
+.table-button--green:hover
+    background: #72AB6E
+.green 
+    color: $green
+.pagination-wrapper
+    margin-bottom: 75px
+    span 
+        margin: 0 10px
+    .container
+        display: flex 
+        align-items: center
+        justify-content: center
+.pagination-item
+    width: 40px 
+    height: 40px 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    color: $main-color 
+    text-decoration: none
+    border: 1px solid #DCDCDC
+    border-radius: 5px
+    margin: 0 4px
+    svg 
+        fill: $main-color
+.pagination-item:hover 
+    background: $green
+    color: #fff
+    border-color: $green
+    svg 
+        fill: #fff
+.selects-row--2
+    .input-wrapper
+        width: 49%
+.selects-row--xs
+    width: 520px 
+    max-width: 100%
+.dashboard__header-right--2
+    display: flex
+    justify-content: flex-end
+.table-button--no-active,
+.table-button--no-active:hover
+    background: #CECECE
+.dasgboard__sub-title--back
+    position: relative
+.order-back
+    position: absolute 
+    top: 50% 
+    left: -10px
+    transform: translateX(-100%) translateY(-50%)
+.dashboard__header-right--right
+    text-align: right
+.dashboard__header-footer
+    margin-top: 39px
+    .container  
+        display: flex 
+        justify-content: space-between 
+        align-items: center
+.dashboard__header-details
+    display: flex
+.status
+    color: $green
+    font-weight: 600
+    display: flex 
+    align-items: center
+    span 
+        width: 7px 
+        height: 7px 
+        background: $green 
+        border-radius: 50%
+        display: block
+        margin-right: 13px
+.dashboard__header-details-item
+    font-weight: 600
+    padding-left: 18px 
+    padding-right: 18px
+    border-right: 1px solid $light-grey
+    line-height: 1
+.dashboard__header-details-item:first-child 
+    padding-left: 0
+.dashboard__header-details-item:last-child 
+    border-right: none
+.dashboard__header-left--no-border
+    border-right: none
+.dashboard-form
+    width: 800px 
+    max-width: 90%
+    margin-left: auto 
+    margin-right: auto 
+    display: flex
+    margin-top: 80px
+    display: flex 
+    justify-content: space-between
+    margin-bottom: 100px
+    position: relative
+    .input 
+        background: #F7F7F7
+    .textarea 
+        background: #F7F7F7
+.form-col
+    width: 48%
+.edit-btn
+    cursor: pointer
+    position: absolute 
+    top: 30px 
+    right: 0
+.orders-table--admin
+    margin-top: 78px
+    margin-bottom: 100px
+    .orders-row
+        position: relative
+    .order-arrow
+        position: absolute 
+        right: 30px 
+    .orders-col:first-child
+        width: 30%
+    .orders-col:nth-child(2)
+        width: 55%
+    .orders-col:nth-child(3)
+        width: 15%
+.orders-table--3
+    margin-top: 78px
+    margin-bottom: 130px
+    .orders-row
+        position: relative
+    .orders-col:first-child
+        width: 40%
+    .orders-col:nth-child(2)
+        width: 25%
+    .orders-col:nth-child(3)
+        width: 20%
+    .orders-col:nth-child(4)
+        width: 10%
+    .order-arrow
+        position: absolute 
+        right: 30px 
+.dashboard-form--3
+    margin-top: 0
+    margin: 0
+    
+.dashboard__header--2
+    padding-bottom: 60px
+    
+.table-input
+    width: 100px 
+    height: 40px
+    border: 1px solid #E4E4E4
+    padding: 0 12px 
+    outline: none
+.orders-table--sm
+    .orders-row:hover
+        background: #fff
+.orders-table--sm2
+    margin-bottom: 100px
+    .orders-row
+        display: flex 
+        justify-content: space-between
+        align-items: center
 @import "media"
 
 
